@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit a Form</title>
+</head>
+<body>
+    <h1>Register to win a doggo who needs a loving home:</h1>
+    <form>
+        <label for = "first">First Name:</label>
+        <label for = "last">Last Name:</label>
+        <input name = "first" id = "first" type = "text" placeholder="Paris" required>
+        <input name = "last" id = "last" type = "text" placeholder="Hilton" required>
+    </form>
+
+    <div>
+        <label for = "female">Female</label>
+        <input id = "female" name = "gender identity"  type = "radio" value = "female">
+        <label for = "male">Male</label>
+        <input id = "male" name = "gender identity"  type = "radio" value = "male">
+        <label for = "other">Other</label>
+        <input id = "other" name = "gender identity"  type = "radio" value = "other">
+    </div>
+
+    <div>
+        <label>
+            Email:
+        </label>
+        <input name = "email" type = "email" placeholder = "your email" required>
+        <label>
+            Password:
+        </label>
+        <input type="password" name="password" id="password" pattern=".{5,10}" placeholder="your password" required="" title="5 to 10 characters">  
+    </div>
+
+<div>
+    <label>Birthday:
+        <select name = "month">
+            <option>Month</option>
+            <option>June</option>
+            <option>July</option>
+            <option>August</option>
+        </select>
+        <select month = "day">
+            <option>Day</option>
+            <option>4</option>
+            <option>8</option>
+            <option>12</option>
+        </select>
+        <select month = "year">
+            <option>Year</option>
+            <option>2020</option>
+            <option>2021</option>
+            <option>2022</option>
+        </select>
+    </label>
+</div>
+
+<div>
+    <label for = "agreement">I agree to the terms and conditions to possibly win a doggo:</label>
+    <input id = "agreement" name = "agreement" type = "checkbox">
+</div>
+
+<div>
+    <input type = "submit">
+</div>
+
+</body>
+</html>
+
